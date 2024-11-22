@@ -22,9 +22,8 @@
         header img {
             width: 80px;
             height: auto;
-            position: absolute;
-            top: 20px;
-            left: 20px;
+            margin-top: 10px; /* 调整Logo顶部间距 */
+            border-radius: 50%; /* 添加圆角 */
         }
         header h1 {
             font-size: 2rem;
@@ -36,7 +35,7 @@
             font-size: 1.2rem;
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px; /* 增加内容展示部分的最大宽度 */
             margin: 2rem auto;
             padding: 1.5rem;
             background: white;
@@ -81,6 +80,25 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* 媒体查询：调整小屏幕样式 */
+        @media (max-width: 600px) {
+            header {
+                padding: 1rem 0.5rem; /* 缩小抬头的内边距 */
+            }
+            header img {
+                width: 60px; /* 缩小Logo大小 */
+            }
+            header h1 {
+                font-size: 1.5rem; /* 缩小抬头标题字体大小 */
+            }
+            header p {
+                font-size: 1rem; /* 缩小抬头段落字体大小 */
+            }
+            .container {
+                padding: 1rem; /* 缩小内容展示部分的内边距 */
+            }
+        }
     </style>
 </head>
 <body>
@@ -94,32 +112,32 @@
         <h2>主要功能介绍</h2>
 
         <div class="feature">
-            <h3>1. 功能介绍</h3>
-            <img src="APP-1.png" alt="实时市场动态">
+            <h3>1. 实时市场动态</h3>
+            <img src="APP-1.png" alt="实时市场动态"> <!-- 替换为实时市场动态图片路径 -->
             <p>通过我们的APP，您可以随时查看全球市场行情，掌握最新的投资机会。</p>
         </div>
 
         <div class="feature">
-            <h3>2. 实名</h3>
-            <img src="investment-projects.jpg" alt="专家推荐投资项目">
-            <p>XXXXXXXX</p>
+            <h3>2. 专家推荐投资项目</h3>
+            <img src="#" alt="专家推荐投资项目"> <!-- 替换为专家推荐投资项目图片路径 -->
+            <p>我们的专业团队每日精选高潜力短期投资项目，助您实现高回报。</p>
         </div>
 
         <div class="feature">
-            <h3>3. 日内交易</h3>
-            <img src="investment-education.jpg" alt="教学内容与课程">
+            <h3>3. 教学内容与课程</h3>
+            <img src="#" alt="教学内容与课程"> <!-- 替换为教学内容与课程图片路径 -->
             <p>由资深教授提供专业的投资技巧教学，提升您的市场分析能力。</p>
         </div>
 
         <div class="feature">
-            <h3>4. 大宗交易</h3>
-            <img src="live-qna.jpg" alt="实时问答功能">
+            <h3>4. 实时问答功能</h3>
+            <img src="#" alt="实时问答功能"> <!-- 替换为实时问答功能图片路径 -->
             <p>提供实时互动，解答您在投资过程中遇到的所有问题。</p>
         </div>
 
         <div class="feature">
-            <h3>5. 其他</h3>
-            <img src="personalized-analysis.jpg" alt="个性化投资分析">
+            <h3>5. 个性化投资分析</h3>
+            <img src="#" alt="个性化投资分析"> <!-- 替换为个性化投资分析图片路径 -->
             <p>根据您的投资偏好和历史记录，提供专属的投资建议。</p>
         </div>
     </div>
